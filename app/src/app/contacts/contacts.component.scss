@@ -1,0 +1,21 @@
+.contacts {
+    .body {
+        .items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem auto;
+            .item {
+                &:hover {
+                    &::after {
+                        content: '';
+                        display: block;
+                        height: 2px;
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+}

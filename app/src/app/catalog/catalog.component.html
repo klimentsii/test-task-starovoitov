@@ -1,0 +1,21 @@
+<section class="catalog">
+  <div class="container">
+    <div class="body">
+      <h1>FEATURED PRODUCTS</h1>
+      <div *ngFor="let wood of woods" class="item">
+        <img [src]="wood.imgSrc" alt="" />
+        <div class="content">
+          <h3>{{ wood.h3 }}</h3>
+          <div class="content_item">
+            <div *ngFor="let type of wood.types" class="content_item_type">
+              {{ type }}
+            </div>
+          </div>
+          <button><a href="#form">Order</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-form></app-form>

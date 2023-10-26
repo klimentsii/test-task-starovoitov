@@ -1,0 +1,16 @@
+<section class="promotions">
+  <div class="container">
+    <div class="body">
+      <h1>PROMOTIONS</h1>
+      <div *ngFor="let wood of woods" class="item">
+        <img [src]="wood.imgSrc" alt="" />
+        <div class="content">
+          <h3>{{ wood.h3 }}</h3>
+          <div class="country">Country: {{ wood.country }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-form></app-form>

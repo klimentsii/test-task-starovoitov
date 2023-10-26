@@ -1,0 +1,32 @@
+<form id="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h3>Make order!</h3>
+  <label>
+    Name
+    <input type="text" formControlName="name" />
+  </label>
+  <label>
+    Email
+    <input type="text" formControlName="email" />
+  </label>
+  <label>
+    Phone
+    <input type="text" formControlName="phone" />
+  </label>
+  <label>
+    Delivery
+    <select type="text" formControlName="delivery">
+      <option value="delivery">Delivery</option>
+      <option value="pickup">Pickup</option>
+    </select>
+  </label>
+  <label>
+    Payment
+    <select type="text" formControlName="payment">
+      <option value="cash">Cash</option>
+      <option value="card">Card</option>
+    </select>
+  </label>
+  I accept<a [routerLink]="'/' + PRIVACY.url">Privacy policy </a>
+  <input type="checkbox" formControlName="privacy" />
+  <button type="submit" [disabled]="!form.valid">Submit</button>
+</form>

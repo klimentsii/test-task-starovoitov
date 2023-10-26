@@ -1,0 +1,13 @@
+<header>
+  <div class="container">
+    <div class="body">
+      <nav>
+        <ul>
+          <li *ngFor="let route of ROUTES" [routerLink]="route.url">
+            {{ route.name }}
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

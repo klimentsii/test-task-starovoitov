@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://test-task-starovoitova.netlify.app/sitemap.xml
